@@ -123,7 +123,7 @@ img{max-width:100%}
   .home-hero{min-height:560px}
   .hero-brand{gap:13px}
   .hero-brand>img{width:150px;height:150px}
-  .hero-brand-ku{font-size:clamp(17px,4.7vw,28px)}
+  .hero-brand-ku{font-size:clamp(14px,4.1vw,24px)}
   .home-projects,.contact,.project-section{padding:80px 22px}
   .project-cards,.contact-links,.plans,.gallery{grid-template-columns:1fr}
   .project-card{min-height:620px}
