@@ -24,7 +24,7 @@ export default function Home() {
       <div className="home-hero-shade"/>
       <a className="hero-brand" href="#projects" aria-label="Deluxe Engineering">
         <img src="/deluxe-logo.png" alt="لۆگۆیا دەلۆکس ئەندازیاری"/>
-        <span><strong>DELUXE</strong><b>ENGINEERING</b></span>
+        <span><strong className="hero-brand-ku">دیلوکس بوو کاروبارێن ئەندازیای</strong></span>
       </a>
     </section>
 

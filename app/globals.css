@@ -19,15 +19,14 @@ img{max-width:100%}
 .home-hero{height:100svh;min-height:620px;position:relative;display:grid;place-items:center;overflow:hidden;background:#050708}
 .home-hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .home-hero-shade{position:absolute;inset:0;background:linear-gradient(#02040566,#02040591),radial-gradient(circle at center,transparent 0,#02040566 75%)}
-.hero-brand{position:relative;z-index:2;display:flex;align-items:center;gap:28px;direction:ltr;text-shadow:0 8px 35px #000}
+.hero-brand{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:18px;direction:rtl;text-align:center;text-shadow:0 8px 35px #000}
 .hero-brand>img{width:clamp(150px,19vw,270px);height:clamp(150px,19vw,270px);object-fit:contain;filter:drop-shadow(0 18px 35px #000)}
-.hero-brand>span{display:grid}
-.hero-brand strong{font-size:clamp(40px,6vw,92px);letter-spacing:.17em;line-height:.9}
-.hero-brand b{font-size:clamp(14px,1.7vw,27px);letter-spacing:.62em;color:var(--orange);margin-top:22px}
+.hero-brand>span{display:block}
+.hero-brand-ku{display:block;font-size:clamp(24px,3.2vw,52px);letter-spacing:0;line-height:1.1;white-space:nowrap}
 .home-projects{padding:110px 5vw 120px;background:#090c0e}
 .section-title{display:flex;align-items:flex-start;gap:22px;margin-bottom:48px}
 .section-title>span{color:var(--orange);font:700 12px Arial,sans-serif;letter-spacing:.15em;margin-top:15px}
-.section-title h1,.section-title h2{font-size:clamp(40px,5vw,72px);line-height:1.15;margin:0}
+.section-title h1,.section-title h2{font-size:clamp(30px,5vw,72px);line-height:1.15;margin:0;white-space:nowrap}
 .section-title h1 small,.section-title h2 small{display:block;direction:ltr;text-align:right;font:400 11px Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#798489;margin-top:11px}
 .project-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .project-card{position:relative;min-height:690px;overflow:hidden;background:#202426}
@@ -37,24 +36,24 @@ img{max-width:100%}
 .project-number{position:absolute;top:25px;right:25px;color:var(--orange);font:700 13px Arial,sans-serif;letter-spacing:.14em}
 .project-card-copy{position:absolute;z-index:2;right:32px;left:32px;bottom:30px}
 .project-card-copy>p{direction:ltr;text-align:right;font:700 10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#b9c0c3;margin:0 0 9px}
-.project-card-copy>h2{font-size:clamp(27px,3vw,43px);line-height:1.25;margin:0 0 25px}
+.project-card-copy>h2{font-size:clamp(22px,2.7vw,43px);line-height:1.25;margin:0 0 25px;white-space:nowrap}
 .card-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;border-top:1px solid #ffffff52;border-bottom:1px solid #ffffff52;padding:17px 0}
 .card-facts div{display:grid;gap:6px}
-.card-facts small{font-size:11px;color:#abb3b6}
-.card-facts b{font-size:15px}
+.card-facts small{font-size:11px;color:#abb3b6;white-space:nowrap}
+.card-facts b{font-size:15px;white-space:nowrap}
 .project-card-copy>em{display:flex;align-items:center;justify-content:space-between;font-style:normal;font-weight:700;font-size:12px;color:var(--orange);margin-top:22px}
 .contact{background:var(--blue);padding:110px 7vw}
 .contact-title{margin-bottom:35px}
 .contact-heading{max-width:900px;margin-bottom:55px}
-.contact-heading h3{font-size:clamp(35px,5vw,67px);line-height:1.35;margin:0 0 18px}
-.contact-heading p{color:#91a3aa;font-size:16px}
+.contact-heading h3{font-size:clamp(24px,4.5vw,62px);line-height:1.35;margin:0 0 18px;white-space:nowrap}
+.contact-heading p{color:#91a3aa;font-size:16px;white-space:nowrap}
 .contact-links{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}
 .contact-links a{display:grid;grid-template-columns:45px 1fr 25px;align-items:center;gap:18px;padding:27px 0;border-bottom:1px solid var(--line)}
 .contact-links a:nth-child(odd){padding-left:40px}
 .contact-links a:nth-child(even){padding-right:40px}
 .contact-links a>b,.contact-links a>i{color:var(--orange);font:400 12px Arial,sans-serif}
 .contact-links a>i{font-style:normal;text-align:left}
-.contact-links span{display:grid;font-weight:700}
+.contact-links span{display:grid;font-weight:700;white-space:nowrap}
 .contact-links small{direction:ltr;text-align:right;color:#81969e;font-weight:400;margin-top:8px}
 .home-footer{background:#050607;padding:38px 6vw;display:flex;align-items:center;justify-content:space-between;color:#6f797d;font-size:12px}
 .home-footer .brand img{width:40px;height:40px}
@@ -65,10 +64,10 @@ img{max-width:100%}
 .project-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .project-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#03050670 0,transparent 35%,#030506dc 100%)}
 .project-top{position:absolute;z-index:4;top:0;right:0;left:0;height:92px;display:flex;justify-content:space-between;align-items:center;padding:0 4vw;border-bottom:1px solid #ffffff35}
-.project-top>a:last-child{font-size:12px}.project-top>a:last-child span{font:20px Arial,sans-serif;margin-right:8px}
+.project-top>a:last-child{font-size:12px;white-space:nowrap}.project-top>a:last-child span{font:20px Arial,sans-serif;margin-right:8px}
 .project-hero-copy{position:relative;z-index:2;max-width:1050px}
 .project-hero-copy>p{font-size:12px;letter-spacing:.18em;color:#d0d6d8;margin:0}
-.project-hero h1{font-size:clamp(52px,7vw,106px);line-height:1.05;margin:20px 0 10px}
+.project-hero h1{font-size:clamp(34px,6.2vw,96px);line-height:1.05;margin:20px 0 10px;white-space:nowrap}
 .project-hero h2{font:400 clamp(18px,2vw,28px) Arial,sans-serif;letter-spacing:.17em;color:#c3c9cb;margin:0;text-align:right}
 .project-section{padding:105px 7vw}
 .project-section-title{margin-bottom:50px}
@@ -83,7 +82,7 @@ img{max-width:100%}
 .plans figure,.gallery figure,.construction-gallery figure{margin:0}
 .plans img{display:block;width:100%;aspect-ratio:3/4;object-fit:contain;background:#23100c}
 .plans figcaption,.gallery figcaption{display:grid;gap:7px;padding:19px 4px}
-.plans figcaption b,.gallery figcaption b{font-size:18px}
+.plans figcaption b,.gallery figcaption b{font-size:18px;white-space:nowrap}
 .plans figcaption small,.gallery figcaption small{font:400 11px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#888}
 .project-section.dark,.construction-section{background:#101518;color:white}
 .project-section.blue{background:#082e3d;color:white}
@@ -97,7 +96,7 @@ img{max-width:100%}
 .stage:first-of-type{border-top:0;padding-top:20px}
 .stage-heading{display:flex;gap:22px;align-items:flex-start;margin-bottom:30px}
 .stage-heading>span{color:var(--orange);font:700 13px Arial,sans-serif;margin-top:10px}
-.stage-heading h2{font-size:clamp(27px,3vw,43px);margin:0}
+.stage-heading h2{font-size:clamp(23px,2.7vw,41px);margin:0;white-space:nowrap}
 .stage-heading h2 small{display:block;direction:ltr;text-align:right;font:400 11px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#859095;margin-top:8px}
 .construction-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
 .construction-gallery figure{background:#1b2226;overflow:hidden}
@@ -105,7 +104,7 @@ img{max-width:100%}
 .construction-gallery figure:hover img{transform:scale(1.03)}
 .construction-gallery figcaption{display:grid;gap:7px;padding:14px 15px;min-height:75px}
 .construction-gallery figcaption span{direction:ltr;text-align:right;color:var(--orange);font:400 10px Arial,sans-serif;letter-spacing:.15em}
-.construction-gallery figcaption b{font-size:13px;line-height:1.45}
+.construction-gallery figcaption b{font-size:13px;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .comparison-section{background:var(--paper)}
 .comparison{position:relative;height:650px;overflow:hidden;background:#151a1d}
 .comparison>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -122,10 +121,9 @@ img{max-width:100%}
 
 @media(max-width:900px){
   .home-hero{min-height:560px}
-  .hero-brand{flex-direction:column;gap:8px;text-align:center}
+  .hero-brand{gap:13px}
   .hero-brand>img{width:150px;height:150px}
-  .hero-brand strong{font-size:41px}
-  .hero-brand b{font-size:12px;margin-top:14px}
+  .hero-brand-ku{font-size:clamp(17px,4.7vw,28px)}
   .home-projects,.contact,.project-section{padding:80px 22px}
   .project-cards,.contact-links,.plans,.gallery{grid-template-columns:1fr}
   .project-card{min-height:620px}
@@ -134,7 +132,14 @@ img{max-width:100%}
   .project-top{height:78px;padding:0 20px}
   .project-top .brand span{display:none}
   .project-hero{height:82svh;min-height:560px;padding:30px 22px}
-  .project-hero h1{font-size:50px}
+  .section-title h1,.section-title h2{font-size:clamp(25px,7.2vw,48px)}
+  .project-section-title h2{font-size:clamp(22px,6.3vw,42px)}
+  .project-card-copy>h2{font-size:clamp(20px,5.7vw,32px)}
+  .contact-heading h3{font-size:clamp(18px,5.2vw,35px)}
+  .contact-heading p{font-size:clamp(12px,3.6vw,16px)}
+  .project-hero h1{font-size:clamp(21px,6.5vw,50px)}
+  .stage-heading h2{font-size:clamp(18px,5vw,34px)}
+  .plans figcaption b,.gallery figcaption b{font-size:clamp(14px,4vw,18px)}
   .stats{grid-template-columns:repeat(2,1fr)}
   .stats>div:last-child{grid-column:1/-1}
   .plans img{aspect-ratio:auto}
@@ -148,7 +153,6 @@ img{max-width:100%}
   .project-card{min-height:540px}
   .project-card-copy{right:20px;left:20px;bottom:22px}
   .card-facts{grid-template-columns:repeat(2,1fr);gap:15px}
-  .contact-heading h3{font-size:35px}
   .construction-gallery{grid-template-columns:1fr}
   .construction-gallery img{aspect-ratio:16/10}
   .comparison-preview{top:10px;left:10px;right:10px;justify-content:space-between}
