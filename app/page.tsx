@@ -62,8 +62,8 @@ export default function Home() {
       <div className="contact-links">
         <a href="https://maps.app.goo.gl/o4aKMhR1BxwSQ9sQA"><b>01</b><span>جهێ ئۆفیسێ<small>عێراق · دهۆک · ماسیکێ</small></span><i>↗</i></a>
         <a href="https://www.instagram.com/aqaratdeluxe/"><b>02</b><span>ئینستاگرام<small>@aqaratdeluxe</small></span><i>↗</i></a>
-        <a href="tel:+9647509817989"><b>03</b><span>تەلەفۆن<small>0750 981 7989</small></span><i>↗</i></a>
-        <a href="https://wa.me/9647509817989"><b>04</b><span>واتسئاپ<small>0750 981 7989</small></span><i>↗</i></a>
+        <a href="tel:+9647509817989"><b>03</b><span>تەلەفۆن<small>07509817989</small></span><i>↗</i></a>
+        <a href="https://wa.me/9647509817989"><b>04</b><span>واتسئاپ<small>07509817989</small></span><i>↗</i></a>
       </div>
     </section>
 
